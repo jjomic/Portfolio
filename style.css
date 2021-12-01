@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+body{
+    background-image: linear-gradient(45deg,rgb(181, 62, 250)25%, rgba(255,138,62,1) 25%, rgba(255,138,62,1) 75%, rgb(181, 62, 250)75%);
+    background-attachment: fixed;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    /*CSS Smooth Scroll*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+
+/*Header styling*/
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 5em;
+    background: rgba(0,0,0,0.7);
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li{
+    font-size: 40px;
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover{
+    color:rgb(181, 62, 250);
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.8);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+section h1{
+    font-size: 4rem;
+    text-shadow: 2px 2px rgba(62, 16, 70, 0.925);
+}
+
+section p{
+    font-size: 1.5rem;
+}
+
+section li{
+    font-size: 1.25rem;
+}
+
+/*Home*/
+#home img{
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+#home p{
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.8);
+}
+
+.name{
+    margin: 0;
+    font-size: 4rem;
+    text-decoration: 2.5px underline;
+    text-decoration-color:rgb(181, 62, 250);
+}
+
+.title{
+    color: black;
+    font-size: 2.25rem;
+}
+
+.city{
+    font-size: 2.0rem;
+}
+
+/*About*/
+
+.about-me{
+    color: rgba(255,138,62,1);
+    background:rgba(255, 255, 255, 0.7);
+    border:3px solid black;
+    border-radius: 10px;
+    padding: 1em 1em;
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.3);
+}
+
+.about-me ul{
+    list-style: none;
+}
+
+.about-me p{
+    font-size: 1.3rem;
+}
+
+/*Skills*/
+
+#skills ul{
+    text-align: left;
+    list-style: none;
+    color: rgba(255,138,62,1);
+    background:rgba(255, 255, 255, 0.7);
+    border:3px solid black;
+    border-radius: 10px;
+    padding: 1em 1em;
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.3);
+}
+
+#skills ul li{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.3)
+}
+
+#skills p{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.3)
+}
+
+.soft-skills-list{
+    color: rgba(255,138,62,1);
+    background:rgba(255, 255, 255, 0.7);
+    border:3px solid black;
+    border-radius: 10px;
+    padding: 1em 1em;
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.3);
+}
+
+/*Portfolio*/
+
+.portfolio-wrapper{
+    margin-top: 2.0em;
+    width: 20em;
+}
+#portfolio ul{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    list-style: none;
+}
+
+#portfolio ul li{
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+}
+
+#portfolio img{
+    border: 2px white solid;
+    border-radius: 10px;
+}
+
+
+/*Contact*/
+
+.contact-wrapper{
+    color: rgba(255,138,62,1);
+    background:rgba(255, 255, 255, 0.7);
+    border:3px solid black;
+    border-radius: 10px;
+    padding: 1em 1em;
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.3);
+}
+
+#contact ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+#contact ul li{
+    padding: 1rem;
+}
