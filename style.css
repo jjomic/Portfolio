@@ -34,7 +34,7 @@ body{
     /*CSS Smooth Scroll*/
     overflow-y: scroll;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: none;
 }
 
 
@@ -127,12 +127,13 @@ section li{
 /*About*/
 
 .about-me{
-    color: rgba(255,138,62,1);
+    color: rgba(181, 62, 250);
     background:rgba(255, 255, 255, 0.7);
     border:3px solid black;
     border-radius: 10px;
     padding: 1em 1em;
     text-shadow: 1px 1px rgba(13, 1, 15, 0.3);
+    max-width: 72.281rem;
 }
 
 .about-me ul{
@@ -148,12 +149,17 @@ section li{
 #skills ul{
     text-align: left;
     list-style: none;
-    color: rgba(255,138,62,1);
+    color: rgba(181, 62, 250);
     background:rgba(255, 255, 255, 0.7);
     border:3px solid black;
     border-radius: 10px;
     padding: 1em 1em;
     text-shadow: 1px 1px rgba(13, 1, 15, 0.3);
+    width: 72.281rem;
+}
+
+#skills h1{
+    font-size: 2.75rem;
 }
 
 #skills ul li{
@@ -167,45 +173,131 @@ section li{
 }
 
 .soft-skills-list{
-    color: rgba(255,138,62,1);
+    color: rgba(181, 62, 250);
     background:rgba(255, 255, 255, 0.7);
     border:3px solid black;
     border-radius: 10px;
     padding: 1em 1em;
     text-shadow: 1px 1px rgba(13, 1, 15, 0.3);
+    width: 72.281rem;
+}
+
+#skills ul li a{
+    color: rgba(181, 62, 250);
+    text-decoration: none;
+}
+
+#skills ul li a:hover{
+    color:rgba(255,138,62,1);
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.8);
+}
+
+.certifications li{
+    text-align: center;
+}
+/*Experience*/
+
+#experience ul li{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.3);
+    overflow-wrap: break-word;
+}
+
+#experience ul li a{
+    color: rgba(181, 62, 250);
+    text-decoration: none;
+}
+
+#experience ul li a:hover{
+    color:rgba(255,138,62,1);
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.8);
+}
+
+.recents ul{
+    text-align: left;
+    list-style: none;
+    color: rgba(181, 62, 250);
+    background:rgba(255, 255, 255, 0.7);
+    border:3px solid black;
+    border-radius: 10px;
+    padding: 1em 1em;
+    margin: 20px;
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.3);
+    width: 72.281rem;
+    overflow-wrap: break-word;
+    
+}
+
+.recents ul ul{
+    border: 0;
+    background: none;
+    margin-top: -20px;
+    margin-bottom: -15px;
+    width: 70rem;
+    overflow-wrap: break-word;
+}
+
+.recents ul ul li{
+    list-style: circle;
+    list-style-position: inside;
+    color: black;
+    font-size: 10%;
+    overflow-wrap: break-word;
+    width: 70rem;
 }
 
 /*Portfolio*/
 
-.portfolio-wrapper{
-    margin-top: 2.0em;
-    width: 20em;
-}
 #portfolio ul{
     display: flex;
-    margin: 0 auto;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    align-content: center;
+    padding: 1em 1em;
     list-style: none;
+    background:rgba(255, 255, 255, 0.7);
+    border:3px solid black;
+    border-radius: 10px;
+    width: 72.281rem;
+    margin: 20px;
 }
 
 #portfolio ul li{
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     margin: 0 auto;
-    width: 80%;
     height: 50%;
 }
 
 #portfolio img{
-    border: 2px white solid;
+    border: 2px black solid;
     border-radius: 10px;
 }
 
+#portfolio img:hover{
+    border: 2px rgba(181, 62, 250) solid;
+    border-radius: 10px;
+}
 
+#portfolio a{
+    color: black;
+    text-decoration: none;
+}
+
+#portfolio a:hover{
+    color:rgba(181, 62, 250);
+    text-shadow: 1px 1px rgba(13, 1, 15, 0.8);
+}
+
+#portfolio p{
+    text-shadow: 2px 2px rgba(13, 1, 15, 0.3)
+}
 /*Contact*/
 
 .contact-wrapper{
-    color: rgba(255,138,62,1);
+    color: rgba(181, 62, 250);
     background:rgba(255, 255, 255, 0.7);
     border:3px solid black;
     border-radius: 10px;
