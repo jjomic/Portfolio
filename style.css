@@ -192,6 +192,9 @@ section li{
     text-shadow: 1px 1px rgba(13, 1, 15, 0.8);
 }
 
+.certifications ul{
+    columns: 2;
+}
 .certifications li{
     text-align: center;
 }
