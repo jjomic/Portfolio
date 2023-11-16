@@ -194,6 +194,8 @@ section li{
 
 .certifications ul{
     columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 .certifications li{
     text-align: center;
